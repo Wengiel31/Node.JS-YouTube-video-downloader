@@ -12,4 +12,3 @@ if (!ytdl.validateURL(song)) {
 var name = readline.question('Name that you want Your video to have (default: "video"): ', {defaultInput: "video"});
 console.log("Processing your request...");
 ytdl(song, {quality: "highest", lang: "en"}).pipe(fs.createWriteStream(name + ".mp4"));
-//console.log("Requestes video has been downloaded and encypted. You can now find it in the path of this program");
